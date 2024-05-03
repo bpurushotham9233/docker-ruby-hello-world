@@ -3,5 +3,5 @@ RUN mkdir /app
 WORKDIR /app
 ADD . /app
 RUN bundle install
-EXPOSE 8085
+EXPOSE 8081
 CMD bundle exec puma config.ru -p $PORT -e production
